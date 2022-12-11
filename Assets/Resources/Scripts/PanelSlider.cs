@@ -85,10 +85,11 @@ public class PanelSlider : MonoBehaviour
     #region 多段階ズーム
     public void zoomPanel(GameObject ZoomGameObj)
     {
-        GameObject CurrentPanel = eventSystem.currentSelectedGameObject.transform.parent.gameObject;
+        GameObject CurrentPanel 
+            = eventSystem.currentSelectedGameObject.transform.parent.gameObject.transform.parent.gameObject;
         //現在のパネルを保存
         zoomPanels[index] = CurrentPanel;
-        CurrentPanel.SetActive(false);
+        //CurrentPanel.SetActive(false);
         index++;
         zoomPanels[index] = ZoomGameObj;
         ZoomGameObj.SetActive(true);

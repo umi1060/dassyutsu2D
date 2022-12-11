@@ -42,7 +42,8 @@ public class Slot : MonoBehaviour
         item = ItemDataBase.instance.Spawn(Item.Type.default_null);
 
         image.sprite = defaultsprite;
-        HideBackimage();
+        //HideBackimage();
+        backimage.SetActive(false);
     }
 
     // Slotが空かどうか

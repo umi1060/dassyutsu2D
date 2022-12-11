@@ -158,7 +158,7 @@ public class ItemBox : MonoBehaviour
     // アイテムの使用
     public void UseSelectItem()
     {
-
+        if (selectSlot == null) return;
         selectSlot.RemoveItem();
         selectSlot = null;
 
@@ -167,6 +167,7 @@ public class ItemBox : MonoBehaviour
     // スロットに特定のアイテムを持っているかcheck
     public bool IsHaveItem(Item.Type itemType)
     {
+        
         // 左づめで入れる
         for (int i = 0; i < slots.Length; i++)
         {
@@ -180,6 +181,14 @@ public class ItemBox : MonoBehaviour
         }
         return false;
 
+    }
+
+    //selectslotのアイテム✓
+    public bool checkSelectSlotItem(Item.Type itemType)
+    {
+        if (selectSlot == null) return false;
+        if (selectSlot.item.type == itemType) return true;
+        return false;
     }
 
     // スロットに特定のアイテムを持っているかcheckしてから、特定アイテムだったら削除

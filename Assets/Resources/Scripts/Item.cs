@@ -11,9 +11,9 @@ public class Item
     public enum Type
     {
         default_null,
-        pen,
-        teapot,
-        teacup,
+        shovel,
+        pear,
+        sunoil,
         towel,
         Remocon,
         sheet1,
