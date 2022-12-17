@@ -21,7 +21,13 @@ public class PanelSlider : MonoBehaviour
     [SerializeField] GameObject RightButton = default;
     [SerializeField] GameObject BackButton = default;
 
+    public static PanelSlider instance;
 
+    private void Awake()
+    {
+
+        instance = this;
+    }
     #endregion
 
     #region 左右のボタン

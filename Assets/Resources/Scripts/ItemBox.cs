@@ -161,6 +161,12 @@ public class ItemBox : MonoBehaviour
         if (selectSlot == null) return;
         selectSlot.RemoveItem();
         selectSlot = null;
+        //度全てのスロットの枠を非表示
+        for (int i = 0; i < slots.Length; i++)
+        {
+            Slot slot = slots[i];
+            slot.HideBackimage();
+        }
 
     }
 

@@ -17,11 +17,17 @@ MonoBehaviour:
     sprite: {fileID: 0}
     text: "\u306A\u3057"
   - type: 1
-    sprite: {fileID: 21300000, guid: 8288ffd25e6cc413087716f82312a78c, type: 3}
+    sprite: {fileID: 21300000, guid: bfec3d0bd4dffda409cbed1e41a9477e, type: 3}
     text: "\u30DA\u30F3"
   - type: 2
-    sprite: {fileID: 21300000, guid: 11d3e74fcfea84501ae5b08d11ed126c, type: 3}
+    sprite: {fileID: 21300000, guid: b7b64f983ff122f4c9c4204e85a5a578, type: 3}
     text: test
   - type: 3
-    sprite: {fileID: 21300000, guid: c07549e02a2d55049906af989d15fe22, type: 3}
+    sprite: {fileID: 21300000, guid: 5f0a59f1df4398d4e8faf27e7924f19a, type: 3}
+    text: sunoil
+  - type: 4
+    sprite: {fileID: 21300000, guid: 7b3f47285d43a5a4caa0a5cfca35bd5f, type: 3}
+    text: sunoil
+  - type: 5
+    sprite: {fileID: 21300000, guid: fe2ba89dde7d00f4ba4a4f5528b0dfd4, type: 3}
     text: sunoil
