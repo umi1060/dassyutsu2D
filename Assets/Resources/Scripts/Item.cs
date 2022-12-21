@@ -17,7 +17,7 @@ public class Item
         surfboard,
         starfruit,
         rocket,
-        sheet2,
+        fude,
         glasses,
         water_towel,
         ball,

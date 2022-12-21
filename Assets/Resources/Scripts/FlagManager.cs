@@ -14,5 +14,5 @@ public class FlagManager : MonoBehaviour
 
     public int  UseShovelTime = 0;
     public bool IsClearTreasureBox = false;
-
+    public bool IsClearSuitCase = false;
 }
