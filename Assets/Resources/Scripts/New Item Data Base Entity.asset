@@ -31,3 +31,6 @@ MonoBehaviour:
   - type: 5
     sprite: {fileID: 21300000, guid: fe2ba89dde7d00f4ba4a4f5528b0dfd4, type: 3}
     text: sunoil
+  - type: 6
+    sprite: {fileID: 21300000, guid: f596089fcec8f9f459fc6a52dcb9f67a, type: 3}
+    text: sunoil

@@ -16,7 +16,7 @@ public class Item
         sunoil,
         surfboard,
         starfruit,
-        sheet1,
+        rocket,
         sheet2,
         glasses,
         water_towel,
