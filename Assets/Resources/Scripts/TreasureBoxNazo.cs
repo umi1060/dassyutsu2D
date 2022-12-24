@@ -14,6 +14,7 @@ public class TreasureBoxNazo : MonoBehaviour
     [SerializeField] int ColorType = 4;
    // public GameObject TapPositionTrue = default;
     public GameObject TapPositionFalse = default;
+    public GameObject TapPositionTrue = default;
 
     //　マテリアルを変更するゲームオブジェクト
     [SerializeField] GameObject[] gameobjs = new GameObject[4];
@@ -41,7 +42,7 @@ public class TreasureBoxNazo : MonoBehaviour
             if (inputColor[i] == 3) gameobjs[i].GetComponent<Image>().color = Color.green;
 
 
-            CheckCorrect();
+           
         }
     }
 
@@ -62,7 +63,7 @@ public class TreasureBoxNazo : MonoBehaviour
             FlagManager.instance.IsClearTreasureBox = true;
             //　TapPosition 表示/非表示
             TapPositionFalse.SetActive(false);
-           // TapPositionTrue.SetActive(true);
+            TapPositionTrue.SetActive(true);
 
             this.gameObject.SetActive(false);
             //DelayMethodを1.0秒後に呼び出す
@@ -84,11 +85,8 @@ public class TreasureBoxNazo : MonoBehaviour
     public void DelayMethod2()
     {
 
-        //ロケット入手
-        this.GetComponent<PickupObj>().OnClickObj();
-        //ロケットをとった後の画像に切り替え
-        MaskPanel2.SetActive(true);
-        this.gameObject.SetActive(false);
+
+       
     }
 
 

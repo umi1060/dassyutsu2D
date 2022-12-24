@@ -7,6 +7,7 @@ using UnityEngine.Playables;
 public class UseShovel : MonoBehaviour
 {
     [SerializeField] GameObject MaskPanel = default;
+    [SerializeField] GameObject TapPositionTrue = default;
 
     // Start is called before the first frame update
     public void OnClick()
@@ -33,7 +34,8 @@ public class UseShovel : MonoBehaviour
             ItemBox.instance.UseSelectItem();
         }
 
-        this.gameObject.GetComponent<PickupObj>().OnClickObj();
+        // this.gameObject.GetComponent<PickupObj>().OnClickObj();
+        TapPositionTrue.SetActive(true);
         this.gameObject.SetActive(false);
         
     }
