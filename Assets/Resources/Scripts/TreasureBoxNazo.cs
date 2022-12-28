@@ -63,7 +63,7 @@ public class TreasureBoxNazo : MonoBehaviour
             FlagManager.instance.IsClearTreasureBox = true;
             //　TapPosition 表示/非表示
             TapPositionFalse.SetActive(false);
-            TapPositionTrue.SetActive(true);
+            
 
             this.gameObject.SetActive(false);
             //DelayMethodを1.0秒後に呼び出す
@@ -75,7 +75,7 @@ public class TreasureBoxNazo : MonoBehaviour
 
     public void DelayMethod()
     {
-        
+        TapPositionTrue.SetActive(true);
         MaskPanel.SetActive(true);
         //DelayMethodを1.0秒後に呼び出す
         Invoke(nameof(DelayMethod2), 1.0f);

@@ -6,7 +6,7 @@ using UnityEngine.Playables;
 
 public class UseShovel : MonoBehaviour
 {
-    [SerializeField] GameObject MaskPanel = default;
+   // [SerializeField] GameObject MaskPanel = default;
     [SerializeField] GameObject TapPositionTrue = default;
 
     // Start is called before the first frame update
@@ -15,7 +15,7 @@ public class UseShovel : MonoBehaviour
         if(ItemBox.instance.checkSelectSlotItem(Item.Type.shovel) == true)
         {
             //マスク画像表示
-            MaskPanel.SetActive(true);
+           // MaskPanel.SetActive(true);
 
             //タイムライン再生
             this.GetComponent<PlayableDirector>().Play();

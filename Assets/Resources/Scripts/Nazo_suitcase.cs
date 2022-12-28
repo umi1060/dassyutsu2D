@@ -61,7 +61,7 @@ public class Nazo_suitcase : MonoBehaviour
             FlagManager.instance.IsClearSuitCase = true;
             //　TapPosition 表示/非表示
             TapPositionFalse.SetActive(false);
-            TapPosition_true.SetActive(true);
+
 
             //DelayMethodを1.0秒後に呼び出す
             Invoke(nameof(DelayMethod), 1.0f);
@@ -73,7 +73,7 @@ public class Nazo_suitcase : MonoBehaviour
     public void DelayMethod()
     {
         MaskPanel.SetActive(true);
-
+        TapPosition_true.SetActive(true);
         //DelayMethodを1.0秒後に呼び出す
         Invoke(nameof(DelayMethod2), 1.0f);
 

@@ -9,8 +9,11 @@ public class UseSurfBoard : MonoBehaviour
     {
         if (ItemBox.instance.checkSelectSlotItem(Item.Type.surfboard) == true)
         {
-            //タイムライン再生
-            this.GetComponent<PlayableDirector>().Play();
+            if (FlagManager.instance.UseFude == true)
+            {
+                //タイムライン再生
+                this.GetComponent<PlayableDirector>().Play();
+            }          
         }
     }
 
@@ -22,7 +25,10 @@ public class UseSurfBoard : MonoBehaviour
         // TapPositionTrue.SetActive(true);
         FlagManager.instance.UseSurfBoard = true;
         this.gameObject.SetActive(false);
+    }
 
-
+    public void DoTimeLine()
+    {
+        PanelSlider.instance.BackPanel();
     }
 }
