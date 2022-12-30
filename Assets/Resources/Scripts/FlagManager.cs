@@ -17,4 +17,5 @@ public class FlagManager : MonoBehaviour
     public bool UseSurfBoard = false;
     public bool IsClearTreasureBox = false;
     public bool IsClearSuitCase = false;
+    public bool IsClearRocketPuzzle = false;
 }
