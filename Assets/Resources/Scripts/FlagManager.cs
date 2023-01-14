@@ -15,6 +15,7 @@ public class FlagManager : MonoBehaviour
     public int  UseShovelTime = 0;
     public bool UseFude = false;
     public bool UseSurfBoard = false;
+    public bool UseRocket = false;
     public bool IsClearTreasureBox = false;
     public bool IsClearSuitCase = false;
     public bool IsClearRocketPuzzle = false;
